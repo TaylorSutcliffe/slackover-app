@@ -6,6 +6,7 @@ import Store, {
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import ChatWindow from "../ChatWindow";
 import TextInputBox from "../TextInputBox";
+import KeyInputBox from "../KeyInputBox";
 import ChannelList from "../ChannelList";
 import './App.css';
 
@@ -72,6 +73,9 @@ const App = () => {
               user={user}
             />
             <TextInputBox messagesApi={Store} user={user} />
+            <br />
+            <br />
+            <KeyInputBox messagesApi={Store} user={user} />
           </div>
         </>
       )}
